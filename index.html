@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AudioWave</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0 20px;
+      text-align: center;
+    }
+
+    #start-btn {
+      align-items: center;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    #stop-btn {
+      align-items: center;
+      background-color: #de2134;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+    }
+
+    #transcription {
+      border: 1px solid black;
+      height: auto;
+      min-height: 75px;
+      max-height: 200px;
+      overflow: auto;
+      padding: 5px;
+      text-align: left;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>AudioWave</h1>
+  <button id="start-btn"><i class="fas fa-microphone"></i></button>
+  <button id="stop-btn" disabled><i class="fas fa-stop"></i></button>
+  <p><strong>Transcription:</strong></p>
+  <p id="transcription"></p>
+  <button id="clear-btn">Clear Output</button>
+  <button id="copy-btn">Copy Output</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
